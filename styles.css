@@ -8,9 +8,27 @@ body, ul, li, p {
 
 a {
     text-decoration: none;
+    color: #fff;
 }
 
 .header {
+    background-color: black;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.menu {
+    display: flex;
+}
+
+.menu li {
+    margin-left: 20px
+}
+
+.menu li a {
+    display: block;
+    padding: 20px;
 }
