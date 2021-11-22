@@ -1,34 +1,132 @@
-body, ul, li, p {
+html, body {
     margin: 0;
     padding: 0;
-    list-style: none;
-    font-size: 1.2rem;
-    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
 }
 
-a {
-    text-decoration: none;
-    color: #fff;
+body {
+    max-width: 100vw;
+    height: 100vh;
 }
 
-.header {
-    background-color: black;
+/* main {
+    width: 100%;
+    height: calc(100vh - 270px);
+
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    padding: 20px;
+} */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    background: black;
 }
 
-.menu {
+div {
+    display: flex;
+    align-items: flex-end;
+}
+
+div a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    padding: 15px;
+    display:inline-block;
+}
+
+ul {
+    display: inline;
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    display: inline-block;
+}
+
+ul li:hover {
+    background: #555;
+}
+
+ul li:hover ul {
+    display: block;
+}
+   
+ul li ul {
+    position: absolute;
+    width: 200px;
+    display: none;
+}
+    
+ul li ul li { 
+    background: #555; 
+    display: block; 
+}
+    
+ul li ul li a {
+    display:block !important;
+} 
+    
+ul li ul li:hover {
+    background: #666;
+}
+
+.container {
     display: flex;
 }
 
-.menu li {
-    margin-left: 20px
+.grid {
+    display: grid;
+    grid-template-columns: 10% 22,5% 22,5% 22,5% 22,5%;
+    grid-template-rows: 25% 25% 25% 25%;
+    grid-gap: 50px;
 }
 
-.menu li a {
-    display: block;
-    padding: 20px;
+.container img {
+    max-width: 100%;
+    max-height: 100%;
 }
+
+.container p {
+    color: black;
+    text-align: center;
+}
+
+.product1 {
+    display: grid;
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+
+.product2 {
+    display: grid;
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+}
+
+.product3 {
+    display: grid;
+    grid-column: 5 / 6;
+    grid-row: 2 / 3;
+}
+
+.product4 {
+    display: grid;
+    grid-column: 2 / 3;
+    grid-row: 4 / 5;
+}
+
+.product5 {
+    display: grid;
+    grid-column: 3 / 4;
+    grid-row: 4 / 5;
+}
+
+.product6 {
+    display: grid;
+    grid-column: 5 / 6;
+    grid-row: 4 / 5;
+} 
