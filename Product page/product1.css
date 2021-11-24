@@ -18,6 +18,11 @@ header {
   border-bottom: 1px solid black;
 }
 
+main {
+  max-width: 100vw;
+  height: calc(100% -76px);
+}
+
 .menu {
   display: flex;
   justify-content: flex-end;
@@ -71,6 +76,21 @@ ul li ul li:hover {
   background: #666;
 }
 
+/* .product_background {
+  height: 250px;
+  width: 100%;
+  background-image: url(../assets/Product_background/product1-background.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+} */
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .container {
   display: flex;
   flex-direction: column;
@@ -95,14 +115,37 @@ ul li ul li:hover {
   flex-direction: row;
   justify-content: flex-start;
   align-items: flex-start;
+  margin-right: 180px;
 }
 
-.container .smallpics .picture2 {
+.container .smallpics .picture {
   max-width: 150px;
   height: 150px;
+  cursor: pointer;
 }
 
-.container .smallpics .picture3 {
-  max-width: 150px;
-  height: 150px;
+.container .smallpics .picture:hover {
+
+}
+
+.buybtn {
+  display: flex;
+  align-items:center;
+  justify-content: center;
+}
+
+.buybtn button {
+  color: black;
+  background: green;
+  width: 150px;
+  height: 50px;
+  cursor: pointer;
+  transition: 0.2;
+  font-size: 20px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  border-radius: 25px;
+}
+
+.buybtn button:hover {
+  background: rgb(54, 230, 54);
 }

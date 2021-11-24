@@ -73,6 +73,7 @@ ul li ul li:hover {
 
 main {
   height: calc(100% -76px);
+  max-width: 100vw;
 }
 
 .grid {
