@@ -181,8 +181,6 @@ input:nth-of-type(5):checked ~ div#carousel {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  /* margin: 50px; */
-  /* grid-gap: 50px; */
 }
 
 .product {
@@ -191,7 +189,6 @@ input:nth-of-type(5):checked ~ div#carousel {
   height: 415px;
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
   margin: 20px auto;
-  /* margin: 20px; */
   text-decoration: none;
 }
 
