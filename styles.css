@@ -3,6 +3,7 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
   background-color: #24252a
 }
 
@@ -41,12 +42,12 @@ ul {
 ul li {
   display: inline-block;
   border-radius: 25px;
-  background-color: blue
+  background-color: rgb(3, 143, 153)
 }
 
 
 ul li:hover {
-  background: #555;
+  background: rgb(0, 172, 183);
 }
 
 ul li:hover ul {
@@ -59,7 +60,7 @@ ul li ul {
 }
 
 ul li ul li {
-  background: #555;
+  background: rgb(3, 143, 153);
   display: block;
 }
 
@@ -68,7 +69,7 @@ ul li ul li a {
 }
 
 ul li ul li:hover {
-  background: #666;
+  background: rgb(0, 172, 183);
 }
 
 main {
@@ -187,7 +188,7 @@ input:nth-of-type(5):checked ~ div#carousel {
 .product {
   background: #fff;
   max-width: 300px;
-  height: 410px;
+  height: 415px;
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
   margin: 20px auto;
   /* margin: 20px; */
@@ -201,7 +202,7 @@ input:nth-of-type(5):checked ~ div#carousel {
 .price {
   width: 25%;
   float: left;
-  color: red;
+  color: rgb(3, 143, 153);
   font-size: 3.5em;
   position: relative;
   margin-top: 25px;

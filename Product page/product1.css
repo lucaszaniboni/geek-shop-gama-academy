@@ -3,6 +3,7 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
   background-color: #24252a
 }
 
@@ -46,12 +47,12 @@ ul {
 ul li {
   display: inline-block;
   border-radius: 25px;
-  background-color: blue
+  background-color: rgb(3, 143, 153)
 }
 
 
 ul li:hover {
-  background: #555;
+  background:rgb(0, 172, 183);
 }
 
 ul li:hover ul {
@@ -64,7 +65,7 @@ ul li ul {
 }
 
 ul li ul li {
-  background: #555;
+  /* background: rgb(3, 143, 153); */
   display: block;
 }
 
@@ -73,7 +74,7 @@ ul li ul li a {
 }
 
 ul li ul li:hover {
-  background: #666;
+  background: rgb(0, 172, 183);
 }
 
 /* .product_background {
@@ -89,26 +90,27 @@ ul li ul li:hover {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: row;
 }
 
-.container {
+/* .container {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-}
+} */
 
 .container img {
   margin: 5px;
   padding: 5px;
 }
 
-.container .mainpic {
+/* .container .mainpic {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 100%;
-}
+} */
 
 .container .smallpics {
   display: flex;
@@ -124,8 +126,25 @@ ul li ul li:hover {
   cursor: pointer;
 }
 
-.container .smallpics .picture:hover {
+.product__details {
+  position: inline-block;
+  margin-left: 25px;
+}
 
+.title {
+  font-size: 28px;
+}
+
+.price {
+  color: rgb(3, 143, 153);
+}
+
+.fullprice {
+  font-size: 32px
+}
+
+.installment {
+  font-size: 16px;
 }
 
 .buybtn {
@@ -136,16 +155,22 @@ ul li ul li:hover {
 
 .buybtn button {
   color: black;
-  background: green;
+  background: rgb(3, 143, 153);
   width: 150px;
   height: 50px;
   cursor: pointer;
   transition: 0.2;
-  font-size: 20px;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 25px;
+  font-weight: 500;
   border-radius: 25px;
 }
 
+/* .product__details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+} */
+
 .buybtn button:hover {
-  background: rgb(54, 230, 54);
+  background: rgb(0, 172, 183);
 }
