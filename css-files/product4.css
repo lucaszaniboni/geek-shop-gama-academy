@@ -4,7 +4,8 @@ body {
   padding: 0;
   box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
-  background-color: #24252a
+  background-color: #24252a;
+  overflow-x: hidden;
 }
 
 body {
@@ -21,10 +22,10 @@ header {
 }
 
 .logo {
-  max-height: 100%;
-  max-width: 100%;
-  width: 100%;
-  height: 100%;
+  max-height: 71px;
+  max-width: 288ox;
+  width: auto;
+  height: auto;
 }
 
 main {
@@ -46,50 +47,50 @@ main {
   display: flex;
 }
 
-ul {
+.menu ul {
   display: flex;
   margin: 0;
   padding: 0;
 }
 
-ul li {
-  display: inline-block;
+.menu ul li {
+  list-style: none;
   border-radius: 25px;
   background-color: rgb(3, 143, 153)
 }
 
 
-ul li:hover {
+.menu ul li:hover {
   background:rgb(0, 172, 183);
 }
 
-ul li:hover ul {
+.menu ul li:hover ul {
   display: block;
 }
 
-ul li ul {
+.menu ul li ul {
   position: absolute;
   display: none;
 }
 
-ul li ul li {
+.menu ul li ul li {
   background: rgb(3, 143, 153);
   /* display: block; */
   flex-wrap: wrap;
 }
 
-ul li ul li a {
+.menu ul li ul li a {
   display: block !important;
 }
 
-ul li ul li:hover {
+.menu ul li ul li:hover {
   background: rgb(0, 172, 183);
 }
 
 .product_background {
   height: 150px;
   max-width: 100%;
-  background-image: url(../assets/Product_background/product1-background.jpg);
+  background-image: url(/assets/Product_background/product4-brackground.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -130,6 +131,7 @@ ul li ul li:hover {
 }
 
 .product__details {
+  display: flex;
   flex-direction: column;
   margin-left: 25px;
 }
@@ -197,4 +199,95 @@ ul li ul li:hover {
 
 .buybtn button:hover {
   background: rgb(0, 172, 183);
+}
+
+.textOP {
+  display: flex;
+  background: #4d4e52;
+  margin: 0;
+  padding: 0;
+}
+
+.textOP p {
+  font-size: 40px;
+  font-weight: 500;
+  color: rgb(0, 172, 183);
+}
+
+.otherproducts {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background: #4d4e52;
+}
+
+.product {
+  background: #fff;
+  max-width: 300px;
+  height: 415px;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+  margin: 20px auto;
+  text-decoration: none;
+}
+
+.product-description {
+  position: relative;
+}
+
+.price {
+  width: 25%;
+  float: left;
+  color: rgb(3, 143, 153);
+  font-size: 3.5em;
+  position: relative;
+  margin-top: 25px;
+}
+
+.price::before {
+  content: "R$";
+  position: absolute;
+  top: 0;
+  left: -21px;
+  font-size: 0.35em;
+}
+
+.product img {
+  /* background-size: cover; */
+  max-width: 100%;
+}
+
+.info {
+  padding: 10px;
+  color: #aaa;
+  font-size: 0.85em;
+  max-width: 68%;
+  float: left;
+}
+
+.info h1 {
+  font-size: 20px;
+  margin: 0 0 5px;
+}
+
+.info p {
+  margin-bottom: 15px;
+  line-height: 1.3em;
+}
+
+.total__details {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  background:  #24252a;
+}
+
+.total__details p {
+  flex-wrap: wrap;
+  font-size: 25px;
+  background:  #24252a;
+}
+
+.list ul {
+  font-size: 25px;
+  background: #24252a;
 }
