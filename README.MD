@@ -46,8 +46,8 @@ The project is finished and has the following features:
 
 -------------------
  Responsiveness for all devices
-<img src="assets/readme-images/image 7.jpg"/>
-<img src="assets/readme-images/image 8.jpg"/>
+<img src="assets/readme-images/image 7.jpeg"/>
+<img src="assets/readme-images/image 8.jpeg"/>
 
 ### **Site developed by:**
 - Lucas Dantas Zaniboni
