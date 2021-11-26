@@ -24,7 +24,7 @@ languages
 The project is finished and has the following features:
  - Home page with 6 product varieties and a carousel showing theme images of the store's products
  -  Menu with home page buttons and institutional page
-<img src="assets/readme-images/image1"/>
+<img src="assets/readme-images/image1.jpg"/>
 <img src="assets/readme-images/image2"/>
 
 -------------------
