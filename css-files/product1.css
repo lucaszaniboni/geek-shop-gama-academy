@@ -279,59 +279,6 @@ main {
   background: #24252a;
 }
 
-@media (max-width: 376px) {
-  header {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .smallpics {
-    flex-direction: column;
-  }
-
-  .container .smallpics img {
-    width: 60%
-  }
-
-  .title {
-    font-size: 20px;
-  }
-
-  .prices {
-    line-height: 1rem;
-  }
-
-  .fullprice {
-    font-size: 1.5rem;
-  }
-
-  .installment {
-    font-size: 0.7rem;
-  }
-
-  .buybtn button {
-    width: 70%;
-    font-size: 1.2rem;
-    font-weight: bold;
-  }
-
-  .cart button {
-    width: 70%;
-    font-size: 1.2rem;
-    font-weight: bold;
-  }
-
-  .quantity {
-    font-size: 1.3rem;
-  }
-
-  .quantitynumber {
-    height: 1.1rem;
-    width: 1.4rem
-  }
-}
-
 .footer {
   justify-content: center;
   align-items: center;
@@ -414,4 +361,61 @@ main {
 
 .footer__list a:hover {
   text-decoration: underline;
+}
+
+@media (max-width: 376px) {
+  header {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .smallpics {
+    flex-direction: column;
+  }
+
+  .container .smallpics img {
+    width: 60%
+  }
+
+  .title {
+    font-size: 20px;
+  }
+
+  .prices {
+    line-height: 1rem;
+  }
+
+  .fullprice {
+    font-size: 1.5rem;
+  }
+
+  .installment {
+    font-size: 0.7rem;
+  }
+
+  .buybtn button {
+    width: 70%;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+
+  .cart button {
+    width: 70%;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+
+  .quantity {
+    font-size: 1.3rem;
+  }
+
+  .quantitynumber {
+    height: 1.1rem;
+    width: 1.4rem
+  }
+
+  footer p {
+    margin-left: 1.3rem;
+  }
 }

@@ -4,15 +4,18 @@ body {
   padding: 0;
   box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
-  background-color: #24252a
+  background-color: #24252a;
+  overflow-x: hidden
 }
 
 body {
   max-width: 100vw;
+  width: 100%;
   height: 100vh;
 }
 
 footer {
+    width: 100%;
   background: #aaa;
   display: flex;
   justify-content: center;
@@ -25,6 +28,12 @@ header {
   align-items: center;
   height: auto;
   border-bottom: 1px solid black;
+}
+
+main {
+    max-width: 100vw;
+    width: 100%;
+    display: flex;
 }
 
 .menu {
@@ -50,6 +59,13 @@ header {
 
 .options:hover {
   background: rgb(231, 235, 7);
+}
+
+.text__about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5rem;
 }
 
 .footer {
@@ -135,3 +151,15 @@ header {
   .footer__list a:hover {
     text-decoration: underline;
   }
+
+  @media only screen and (max-width: 376px) {
+      header {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      
+      footer p {
+        margin-left: 1.3rem;
+      }
+      }

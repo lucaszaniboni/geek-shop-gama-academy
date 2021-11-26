@@ -3,16 +3,20 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Roboto', sans-serif;
-  background-color: #24252a
+  font-family: "Roboto", sans-serif;
+  background-color: #24252a;
+  overflow-x: hidden;
 }
 
 body {
   max-width: 100vw;
+  width: 100%;
   height: 100vh;
 }
 
 footer {
+  max-width: 100vw;
+  width: 100%;
   background: #aaa;
   display: flex;
   justify-content: center;
@@ -30,7 +34,7 @@ header {
 .menu {
   display: flex;
   /* width: 20%; */
-  justify-content:space-evenly;
+  justify-content: space-evenly;
 }
 
 .fas {
@@ -51,7 +55,6 @@ header {
 .options:hover {
   background: rgb(231, 235, 7);
 }
-
 
 main {
   height: calc(100% -76px);
@@ -249,7 +252,8 @@ input:nth-of-type(5):checked ~ div#carousel {
   font-size: 1.6rem;
 }
 
-.fab, .fas {
+.fab,
+.fas {
   filter: grayscale(100%);
   cursor: pointer;
   transition: 0.6s ease;
@@ -257,7 +261,7 @@ input:nth-of-type(5):checked ~ div#carousel {
 
 .fa-facebook:hover {
   filter: grayscale(0%);
-  color: rgb(0, 120, 246)
+  color: rgb(0, 120, 246);
 }
 
 .fa-snapchat:hover {
@@ -272,10 +276,31 @@ input:nth-of-type(5):checked ~ div#carousel {
 
 .fa-instagram:hover {
   filter: grayscale(0%);
-  background: #f09433; 
-  background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
-  background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
-  background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+  background: #f09433;
+  background: -moz-linear-gradient(
+    45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  );
+  background: -webkit-linear-gradient(
+    45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  );
+  background: linear-gradient(
+    45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  );
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
 }
 
@@ -300,10 +325,10 @@ input:nth-of-type(5):checked ~ div#carousel {
   justify-content: center;
   list-style: none;
   margin-right: 2rem;
-  filter: grayscale(100%)
+  filter: grayscale(100%);
 }
 
-.footer__list  a{
+.footer__list a {
   margin: 0;
   padding: 0;
   text-decoration: none;
@@ -315,4 +340,20 @@ input:nth-of-type(5):checked ~ div#carousel {
 
 .footer__list a:hover {
   text-decoration: underline;
+}
+
+@media only screen and (max-width: 376px) {
+  header {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  footer {
+    width: 100%;
+  }
+
+  footer p {
+    margin-left: 1.3rem;
+  }
 }
