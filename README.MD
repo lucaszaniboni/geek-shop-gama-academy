@@ -11,7 +11,7 @@ About
 
 #### This project was carried out as the 1st HTML and CSS challenge of the Full Stack Development training course at Gama Academy. As a proposal, I created a hardware parts store with pure HTML and CSS, putting all the knowledge acquired in a 2 week course.
 
-languages
+Languages used:
 -------------------
 - HTML5
 - CSS3
